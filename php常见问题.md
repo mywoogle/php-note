@@ -340,28 +340,28 @@
             
     * 需求二、编写用户个人信息展示页面，详细需求如下
     
-    1）要求使用php自带的mysql操作函数
-    
-    2）用户名参数user通过url以get方式传递
-    
-    3）用户个人信息展示布局随意
-    
-    4）数据库配置
+        1）要求使用php自带的mysql操作函数
+        
+        2）用户名参数user通过url以get方式传递
+        
+        3）用户个人信息展示布局随意
+        
+        4）数据库配置
 
         host:localhost,port:3308
         
         user:db1,password:123,database:user
    
-    5)table_userb表结构如下
-    
-    ```mysql
-    CREATE TABLE `table_user`(
-    `user` varchar(20) default NULL,--用户名
-    `nick` varchar(20) default NULL,--昵称
-    `resume` varchar(100) default NULL,--个人介绍
-    PRIMARY KEY (`user`)
-    )
-    ```
+        5)table_userb表结构如下
+        
+        ```mysql
+        CREATE TABLE `table_user`(
+        `user` varchar(20) default NULL,--用户名
+        `nick` varchar(20) default NULL,--昵称
+        `resume` varchar(100) default NULL,--个人介绍
+        PRIMARY KEY (`user`)
+        )
+        ```
         * 解答
             PHP操作mysql函数详解，mysql和php交互函数实现代码，需要的朋友可以参考下。
             1. 建立和关闭连接 
